@@ -1,0 +1,42 @@
+/* #d8f3dc 
+#b7e4c7
+#95d5b2
+#74c69d
+#52b788
+#40916c
+#2d6a4f
+#1b4332
+#1b4332
+#081c15
+#ccd5ae
+#e9edc9
+#fefae0
+#faedcd
+#d4a373
+*/
+
+.main {
+    min-height: 80vh;
+}
+
+
+.promo{
+    background: #2d6a4f;
+    font-size: 10px;
+    
+}
+.nav-color{
+    background: #d8f3dc ;
+
+}
+.headercss{
+    background: #e9edc9 ;
+}
+.link-color{
+    color: #52b788;
+    text-decoration: none;
+}
+
+.text-color{
+    color: #d4a373
+}
