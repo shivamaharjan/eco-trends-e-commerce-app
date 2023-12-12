@@ -67,19 +67,13 @@ function Login() {
           <StyledText>
             <Row>
               {/* Login Form */}
-              <Col className="login-form">
+              <Col xs={12} md={6} className="mb-4">
                 <Form onSubmit={handleOnSubmit}>
-                  {inputs.map((input) => {
-                    return (
-                      <div style={{ marginBottom: "30px" }}>
-                        <CustomInput
-                          onChange={handleOnChange}
-                          key={input.label}
-                          {...input}
-                        />
-                      </div>
-                    );
-                  })}
+                  {inputs.map((input) => (
+                    <div key={input.label} className="mb-3">
+                      <CustomInput onChange={handleOnChange} {...input} />
+                    </div>
+                  ))}
                   <Button
                     type="submit"
                     style={{
@@ -87,10 +81,11 @@ function Login() {
                       backgroundColor: "#d4a373",
                       color: "white",
                     }}
+                    className="mb-3"
                   >
                     Sign in
                   </Button>
-                  &nbsp;&nbsp;
+                  <span>&nbsp;&nbsp;</span>
                   <Link to="/forget-password" className="link-color">
                     Forget Your Password?
                   </Link>
@@ -98,24 +93,24 @@ function Login() {
               </Col>
 
               {/* SignUp Form */}
-              <Col className="signup-box">
-                <div className="box p-3">
+              <Col xs={12} md={6} className="mb-4">
+                <div className="signup-box p-3">
                   <StyledDINBoldText>
-                    <p className="text-color">New Customer?</p>
+                    <h5 className="text-color">New Customer?</h5>
                   </StyledDINBoldText>
+
                   <StyledText>
-                    <p>Create an account with us and,</p>
+                    <p className="mb-0">Create an account with us and,</p>
                     <ul>
-                      <li> Check out faster</li>
-                      <li>Save multiple shipping address</li>
+                      <li>Check out faster</li>
+                      <li>Save multiple shipping addresses</li>
                       <li>Access your order history</li>
                       <li>Track new orders</li>
                     </ul>
                   </StyledText>
                   <Link
                     to="/register"
-                    className="d-flex justify-content-center nav-link"
-
+                    className="d-flex justify-content-center nav-link mb-3"
                   >
                     <Button
                       style={{
@@ -124,7 +119,7 @@ function Login() {
                         color: "white",
                       }}
                     >
-                      Sign up
+                      Create Account
                     </Button>
                   </Link>
                 </div>

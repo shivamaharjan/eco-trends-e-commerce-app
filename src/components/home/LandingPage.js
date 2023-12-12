@@ -26,7 +26,8 @@ function LandingPage() {
                 }}
               >
                 Shop the Change,
-                <br /> Style with Purpose
+                <br /> 
+                Style with Purpose
               </StyledText>
               <StyledDINBoldText
                 style={{
@@ -36,7 +37,7 @@ function LandingPage() {
                   
                 }}
               >
-                EcoTrends.
+                EcoTrends
               </StyledDINBoldText>
             </ResponsiveContainer>
           </div>
