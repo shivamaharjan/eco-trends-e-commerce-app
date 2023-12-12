@@ -21,7 +21,7 @@
 
 
 .promo{
-    background: #2d6a4f;
+    background: #ccd5ae;
     font-size: 10px;
     
 }
@@ -33,10 +33,23 @@
     background: #e9edc9 ;
 }
 .link-color{
-    color: #52b788;
-    text-decoration: none;
+    color: #1b4332 ;
 }
 
 .text-color{
-    color: #d4a373
+    color: #d4a373;
+}
+.text-color2{
+    color: #ccd5ae;
+}
+.hero{
+    background: rgba(216, 243, 220, 0.117);
+}
+.test{
+   color:  #d4a3735b;
+
+}
+.signup-box{
+
+    background: #6a6a1a17;
 }

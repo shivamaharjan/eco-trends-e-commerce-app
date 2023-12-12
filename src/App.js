@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from 'react-toastify';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import Profile from './pages/profile/Profile';
+import "./styles.css";
 
 
 function App() {

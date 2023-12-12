@@ -8,6 +8,11 @@ import store from './redux/store';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from 'redux-persist';
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Futura:wght@700&display=swap"
+/>;
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
