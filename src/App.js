@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Home from './pages/home/Home';
-import Category from './pages/category/Category';
 import Product from './pages/product/Product';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
@@ -12,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import Profile from './pages/profile/Profile';
 import "./styles.css";
+import CategoryLandingPage from './pages/category/CategoryLandingPage';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/category" element={<Category />}></Route>
+        <Route path="/category-home" element={<CategoryLandingPage/>}></Route>
         <Route path="/product" element={<Product />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>

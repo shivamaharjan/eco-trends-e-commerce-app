@@ -11,7 +11,7 @@ function LandingPage() {
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "400px",
+          height: "550px",
         }}
       >
         <Col className="d-flex justify-content-center align-items-center text-white">

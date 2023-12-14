@@ -16,40 +16,63 @@
 */
 
 .main {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
+.promo {
+  background: #ccd5ae;
+  font-size: 10px;
+}
+.nav-color {
+  background: #d8f3dc;
+}
+.headercss {
+  background: #e9edc9;
+}
+.link-color {
+  color: #1b4332;
+}
 
-.promo{
-    background: #ccd5ae;
+.text-color {
+  color: #d4a373;
+}
+.text-color2 {
+  color: #ccd5ae;
+}
+.hero {
+  background: rgba(216, 243, 220, 0.117);
+}
+.test {
+  color: #d4a3735b;
+}
+.signup-box {
+  background: #6a6a1a17;
+}
+.text-container {
+  background: #d4a373;
+  font-size: 14px;
+}
+
+.padding-nav {
+  padding: 3px;
+}
+@media (max-width: 768px) {
+  .text-container {
+    font-size: 10px; /* Adjust the font size for small screens */
+  }
+  .padding-nav {
+    padding: 2px;
+  }
+  /* Category Nav */
+  .text-category-nav{
     font-size: 10px;
-    
-}
-.nav-color{
-    background: #d8f3dc ;
-
-}
-.headercss{
-    background: #e9edc9 ;
-}
-.link-color{
-    color: #1b4332 ;
+  }
 }
 
-.text-color{
-    color: #d4a373;
-}
-.text-color2{
-    color: #ccd5ae;
-}
-.hero{
-    background: rgba(216, 243, 220, 0.117);
-}
-.test{
-   color:  #d4a3735b;
-
-}
-.signup-box{
-
-    background: #6a6a1a17;
+/* Discount Card for Category Hero */
+.discount-card {
+  border: 2px solid white;
+  border-radius: 15px; /* Adjust the border-radius as needed */
+  padding: 30px; /* Add padding as needed */
+  margin-bottom: 20px;
 }

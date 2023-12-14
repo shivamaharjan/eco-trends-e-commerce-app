@@ -135,7 +135,7 @@ function Register() {
       <div className="main mt-5">
         <Container>
           <StyledText>
-            <h1 className="text-color text-center ">NEW ACCOUNT</h1>
+            <h1 className="text-color text-center ">New Account</h1>
           </StyledText>
 
           <Form onSubmit={handleOnSubmit}>
@@ -165,9 +165,11 @@ function Register() {
             </Row>
             <div className="d-flex justify-content-center align-items-center p-5 mb-5">
               <Button
-                style={{ width: "180px" }}
-                variant="outline-success"
-                type="submit"
+                style={{
+                  width: "150px",
+                  backgroundColor: "#d4a373",
+                  color: "white",
+                }}
               >
                 Create Account
               </Button>

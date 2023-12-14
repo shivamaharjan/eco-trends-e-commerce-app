@@ -34,7 +34,7 @@ function Login() {
 
   useEffect(() => {
     if (userInfo.uid){
-        navigate("/")
+        navigate("/profile")
 
     }
   }, [userInfo])
@@ -63,7 +63,7 @@ function Login() {
           </p>
         </StyledText>
 
-        <Container className="mt-5">
+        <Container className="mt-5" style={{maxWidth:"900px"}}>
           <StyledText>
             <Row>
               {/* Login Form */}
