@@ -2,11 +2,13 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { StyledDINBoldText, StyledText } from "../../TextStyles";
 import ProductCard from "../product/ProductCard";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAllProductAction } from "../../redux/product/productAction";
 
 
 function CategoryBody() {
+
+    const { productList } = useSelector((state) => state.productInfo);
     const dispatch = useDispatch();
     const handleOnClick = () => {
         dispatch(getAllProductAction())
@@ -27,10 +29,12 @@ function CategoryBody() {
         </Col>
       </Row>
       <div>
-        <Row>
-          <Col>
-            <ProductCard />
-          </Col>
+        <Row className="justify-content-center align-items-center mb-4">
+          {productList.map((product) => (
+            <Col key={product.id} xs={12} md={6} lg={4}>
+              <ProductCard {...product} />
+            </Col>
+          ))}
         </Row>
       </div>
     </div>
