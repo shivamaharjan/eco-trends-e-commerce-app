@@ -18,7 +18,7 @@ function CategoryHero() {
       >
         <Col className="d-flex flex-column justify-content-center align-items-center mt-5">
           <StyledDINBoldText className="text-white" style={{ fontWeight: 900 }}>
-            <h2 className="text-center">Shop All</h2>
+            <h1 className="text-center">Shop All</h1>
           </StyledDINBoldText>
 
           <Row className="justify-content-center">
@@ -55,7 +55,7 @@ function CategoryHero() {
             <Col md={7} className="g-5">
               <Row>
                 <Col md={4} className="discount-card">
-                  <StyledDINBoldText className="text-white">
+                  <StyledDINBoldText className="text-white text-center">
                     <h1>30%</h1>
                     <h1>OFF</h1>
                   </StyledDINBoldText>
@@ -64,7 +64,7 @@ function CategoryHero() {
                   </StyledText>
                 </Col>
                 <Col md={4} className="discount-card">
-                  <StyledDINBoldText className="text-white">
+                  <StyledDINBoldText className="text-white ">
                     <h1>20%</h1>
                     <h1>OFF</h1>
                   </StyledDINBoldText>

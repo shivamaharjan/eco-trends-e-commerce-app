@@ -1,7 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Home from './pages/home/Home';
 import Product from './pages/product/Product';
 import Login from './pages/auth/Login';
@@ -12,9 +12,17 @@ import ForgetPassword from './pages/auth/ForgetPassword';
 import Profile from './pages/profile/Profile';
 import "./styles.css";
 import CategoryLandingPage from './pages/category/CategoryLandingPage';
+import { useDispatch } from 'react-redux';
+import { getAllProductAction } from './redux/product/productAction';
 
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() =>{
+    dispatch(getAllProductAction())
+
+  },[])
   return (
     <div>
       <Routes>
