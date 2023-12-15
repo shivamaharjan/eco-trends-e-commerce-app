@@ -1,24 +1,35 @@
 import React from "react";
-import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
-function ProductCard({ thumbnail, title, description, price }) {
-  const renderTooltip = (props) => (
-    <Tooltip id="tooltip">
-      <strong>{title}</strong>
-    </Tooltip>
-  );
+function ProductCard({ thumbnail, title, description, price, slug }) {
+
+  const navigate = useNavigate();
+  const handleOnClick = () => {
+     const productDetails = {
+       thumbnail,
+       title,
+       description,
+       price,
+       slug,
+     };
+    navigate(`/product/${slug}`, { state: { product: productDetails } });
+
+  }
+ 
 
   return (
-    <Card style={{ width: "18rem" }}>
+
+
+    <Card className="card-width">
       <Card.Img
+      onClick={handleOnClick}
         variant="top"
         src={thumbnail}
-        style={{ height: "200px", objectFit: "cover" }}
+        style={{ height: "350px", objectFit: "cover" }}
       />
       <Card.Body>
-        <OverlayTrigger placement="bottom" overlay={renderTooltip}>
           <Card.Title className="text-truncate">{title}</Card.Title>
-        </OverlayTrigger>
         <Card.Text>$ {price}</Card.Text>
       </Card.Body>
     </Card>

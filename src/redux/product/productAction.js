@@ -15,7 +15,9 @@ export const getAllProductAction = () => async (dispatch) => {
         slug,
       });
     });
+    console.log(productList)
     dispatch(setProductList(productList));
+    
   } catch (e) {
     console.log(e);
     toast.error(`Something went wrong ${e.message}`);

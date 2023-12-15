@@ -11,17 +11,18 @@ function CategoryBody() {
     const { productList } = useSelector((state) => state.productInfo);
     const dispatch = useDispatch();
     const handleOnClick = () => {
+    
         dispatch(getAllProductAction())
     }
   return (
     <div>
       <Row className="text-color flex-column justify-content-center">
-        <Col>
+        <Col className="center-on-xs">
           <StyledDINBoldText>
             <h2 onClick={handleOnClick}>Shop all</h2>
           </StyledDINBoldText>
         </Col>
-        <Col>
+        <Col className="mb-5 center-on-xs">
           <StyledText>
             Discover unparalleled quality that stands the test of time. Every
             purchase is a vote for a greener tomorrow.
@@ -29,9 +30,15 @@ function CategoryBody() {
         </Col>
       </Row>
       <div>
-        <Row className="justify-content-center align-items-center mb-4">
+        <Row className="justify-content-center mt-5">
           {productList.map((product) => (
-            <Col key={product.id} xs={12} md={6} lg={4}>
+            <Col
+              key={product.slug}
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 card-on-xs"
+            >
               <ProductCard {...product} />
             </Col>
           ))}

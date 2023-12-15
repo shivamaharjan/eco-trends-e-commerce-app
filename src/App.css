@@ -14,7 +14,6 @@
 #faedcd
 #d4a373
 */
-
 .main {
   min-height: 100vh;
 }
@@ -75,4 +74,25 @@
   border-radius: 15px; /* Adjust the border-radius as needed */
   padding: 30px; /* Add padding as needed */
   margin-bottom: 20px;
+}
+/* Product Card  */
+.card-width{
+  width: 18rem;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .center-on-xs {
+    text-align: center;
+  }
+  .card-on-xs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-width{
+    width: 20rem;
+  }
+ 
 }

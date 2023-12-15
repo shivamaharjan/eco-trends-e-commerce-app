@@ -24,7 +24,7 @@ function CategoryHero() {
           <Row className="justify-content-center">
             <Col xs={12} md="auto" className="text-center">
               <StyledText className="text-white">
-                <h5>Discover sustainability, Embrace Style :</h5>
+                <h5>Discover sustainability, Embrace Style</h5>
               </StyledText>
             </Col>
 
