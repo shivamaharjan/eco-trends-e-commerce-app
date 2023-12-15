@@ -5,6 +5,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap'
 import img from "../../assets/random/img3.jpg"
 import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
+import { StyledDINBoldText } from '../../TextStyles'
 
 function Product() {
   const { slug } = useParams();
@@ -29,19 +30,51 @@ function Product() {
     <div>
       <Header />
       <Container className="main mt-5">
-        <Row className="d-flex flex-column">
+        <Row className="d-flex g-5">
           {/* All product image */}
           {/* Product Image */}
-          <Col md={6}>
-            <Image
-              src={productData.thumbnail}
-              alt="Your Image"
-              fluid
-              rounded
-            />
+          <Col md={7}>
+            <Row className="flex-column">
+              <Col>
+                <Image
+                  src={productData.thumbnail}
+                  alt="Your Image"
+                  fluid
+                  rounded
+                />
+              </Col>
+              <Col>
+                <Row style={{ display: "flex", flexWrap: "wrap" }}>
+                  {productData.images &&
+                    productData.images.map((image, i) => (
+                      <Col key={i}>
+                        <Image
+                          src={image}
+                          alt={`Image ${i + 1}`}
+                          fluid
+                          rounded
+                          style={{ maxWidth: "5rem ", margin: "0.5rem" }}
+                        />
+                      </Col>
+                    ))}
+                </Row>
+              </Col>
+            </Row>
           </Col>
+
           {/* Product Details */}
-          <Col md={6}>a</Col>
+          <Col md={5}>
+            <Row className="d-flex flex-column">
+              <Col>
+                <StyledDINBoldText className="text-color">
+                  <h4>{productData.title}</h4>
+                  <h3>${productData.price}</h3>
+                </StyledDINBoldText>
+              </Col>
+              <Col>
+              </Col>
+            </Row>
+          </Col>
         </Row>
       </Container>
       <Footer />
