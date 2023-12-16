@@ -37,7 +37,7 @@ function CategoryBody() {
               xs={12}
               md={6}
               lg={4}
-              className="mb-4 card-on-xs"
+              className="mb-5 card-on-xs"
             >
               <ProductCard {...product} />
             </Col>

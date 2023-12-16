@@ -23,9 +23,10 @@ function LandingPage() {
                   display: "inline-block",
                   width: "100%",
                   lineHeight: "1.2",
+                  marginBottom: "10px",
                 }}
               >
-                Shop the Change,
+                Shop the Change
                 <br /> 
                 Style with Purpose
               </StyledText>

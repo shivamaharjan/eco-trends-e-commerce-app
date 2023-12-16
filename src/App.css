@@ -57,7 +57,7 @@
 }
 @media (max-width: 768px) {
   .text-container {
-    font-size: 10px; /* Adjust the font size for small screens */
+    font-size: 10px;
   }
   .padding-nav {
     padding: 2px;
@@ -95,4 +95,16 @@
     width: 20rem;
   }
  
+}
+
+/* ALL REVIEWS BOX */
+.review-button {
+  padding: 10px; /* Padding inside the box */
+  border: 1px solid #cccccc8e; /* Border */
+  border-radius: 30px; /* Rounded corners */
+  text-align: center; /* Center align text */
+  margin-top: 20px; /* Top margin */
+}
+.text{
+  color: #04040454;
 }

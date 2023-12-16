@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../components/layout/Header'
 import Footer from '../../components/layout/Footer'
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap'
 import img from "../../assets/random/img3.jpg"
 import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { StyledDINBoldText } from '../../TextStyles'
+import { BiHeart } from 'react-icons/bi'
+
 
 function Product() {
   const { slug } = useParams();
@@ -25,6 +27,11 @@ function Product() {
       }
      
     }, [productList]);
+
+    const quantityOptions = Array.from(
+      { length: productData.quantity || 1 },
+      (_, index) => index + 1
+    );
 
   return (
     <div>
@@ -63,15 +70,58 @@ function Product() {
           </Col>
 
           {/* Product Details */}
+
           <Col md={5}>
-            <Row className="d-flex flex-column">
+            <Row className="d-flex flex-column g-3">
               <Col>
                 <StyledDINBoldText className="text-color">
                   <h4>{productData.title}</h4>
                   <h3>${productData.price}</h3>
                 </StyledDINBoldText>
               </Col>
+
+              <Col className="text-color">
+                <Form.Group className="mb-3">
+                  <Form.Label>QUANTITY</Form.Label>
+                  <Form.Select>
+                    {quantityOptions.map((option, i) => (
+                      <option key={i} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </Form.Select>
+                </Form.Group>
+              </Col>
               <Col>
+                <Row>
+                  <Col md={2}>
+                    <BiHeart className="text-color" style={{fontSize: "3rem"}}/>
+                  </Col>
+                  <Col md={5}>
+                    <Button
+                      style={{
+                        backgroundColor: "#d4a373",
+                        color: "white",
+                        fontSize: "1.8rem",
+                      }}
+                      className="mb-3"
+                    >
+                      Add to Cart
+                    </Button>
+                  </Col>
+                  <Col md={5}>
+                    <Button
+                      style={{
+                        backgroundColor: "#d4a373",
+                        color: "white",
+                        fontSize: "1.8rem",
+                      }}
+                      className="mb-3"
+                    >
+                      Buy Now
+                    </Button>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Col>

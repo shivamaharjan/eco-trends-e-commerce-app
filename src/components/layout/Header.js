@@ -14,7 +14,7 @@ import { useMediaQuery } from "react-responsive";
 function Header() {
   const { user } = useSelector((state) => state.userInfo);
   const [isOpen, setOpen] = useState(false);
-  const isXlScreen = useMediaQuery({ query: "(min-width: 1200px)" });
+  const isXlScreen = useMediaQuery({ query: "(min-width: 1082px)" });
   const dispatch = useDispatch();
 
   const handleLogOut = () => {
