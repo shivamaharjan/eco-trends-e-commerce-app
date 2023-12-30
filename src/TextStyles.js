@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledText = styled.p`
-  font-family: "Futura, sans-serif";
+  fontFamily: "Futura, sans-serif",
   margin: 0;
 `;
 export const StyledDINBoldText = styled.p`

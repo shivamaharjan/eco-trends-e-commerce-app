@@ -13,6 +13,9 @@ import Product from "./pages/product/Product";
 import Profile from "./pages/profile/Profile";
 import { getAllProductAction } from "./redux/product/productAction";
 import "./styles.css";
+import EditProfile from "./components/profile/EditProfile";
+import ChangePassword from "./components/profile/ChangePassword";
+import PrivateRoute from "./components/priavteRoute/PrivateRoute";
 
 function App() {
   const dispatch = useDispatch();
@@ -29,8 +32,10 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/forget-password" element={<ForgetPassword />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>}></Route>
         <Route path="/product/:slug" element={<Product />}></Route>
+        <Route path="/edit-profile" element={<EditProfile/>}></Route>
+        <Route path="/change-password" element={<ChangePassword/>}></Route>
       </Routes>
       <ToastContainer />
     </div>

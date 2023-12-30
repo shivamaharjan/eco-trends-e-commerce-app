@@ -13,7 +13,7 @@ function ShopCategories() {
         </StyledText>
       </div>
       <div>
-        <Row className="justify-content-center g-5">
+        <Row className="justify-content-center g-5 text-color">
           <Col xs={12} md={4} className="mb-4">
             <Image
               src={img1}
