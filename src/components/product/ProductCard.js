@@ -19,18 +19,23 @@ function ProductCard({ thumbnail, title, description, price, slug }) {
  
 
   return (
-
-
     <Card className="card-width">
       <Card.Img
-      onClick={handleOnClick}
+        onClick={handleOnClick}
         variant="top"
         src={thumbnail}
         style={{ height: "350px", objectFit: "cover" }}
       />
       <Card.Body>
-          <Card.Title className="text-truncate">{title}</Card.Title>
-        <Card.Text>$ {price}</Card.Text>
+        <Card.Title
+          className="text-truncate"
+          style={{
+            color: "#d4a373",
+          }}
+        >
+          {title}
+        </Card.Title>
+        <Card.Text className="text-color">$ {price}</Card.Text>
       </Card.Body>
     </Card>
   );

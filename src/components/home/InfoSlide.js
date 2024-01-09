@@ -1,11 +1,15 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { StyledText } from '../../TextStyles';
+import { GiOlive } from "react-icons/gi";
+import { GiEcology } from "react-icons/gi";
+import { GiWisdom } from "react-icons/gi";
+import { MdEmojiNature } from "react-icons/md";
 
 function InfoSlide() {
   return (
     <div
-      className="rounded pt-5 pb-5 ps-3 pe-3 text-color"
+      className="rounded p-5 text-color mt-5"
       style={{
         marginLeft: "30px",
         marginRight: "30px",
@@ -15,12 +19,14 @@ function InfoSlide() {
     >
       <Row className="justify-content-center g-5">
         <Col xs={12} md={4}>
-          <Row className="flex-column g-3 ">
+          <Row className="flex-column g-3 text-center">
             <Col className="d-flex justify-content-center align-items-center">
-              icon
+              <GiEcology style={{ fontSize: "40px", color: "#40916c" }} />
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
-              <h6>Sustainable Living</h6>
+              <h6 style={{ fontSize: "16px", fontWeight: "bold" }}>
+                Sustainable Living
+              </h6>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
               Embrace Eco-Trends, Nurture Tomorrow. Commit to sustainable living
@@ -29,12 +35,14 @@ function InfoSlide() {
           </Row>
         </Col>
         <Col xs={12} md={4}>
-          <Row className="flex-column g-3 ">
+          <Row className="flex-column g-3 text-center">
             <Col className="d-flex justify-content-center align-items-center">
-              icon
+              <GiOlive style={{ fontSize: "40px",color: "#40916c" }} />
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
-              <h6>Green Innovation</h6>
+              <h6 style={{ fontSize: "16px", fontWeight: "bold" }}>
+                Green Innovation
+              </h6>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
               In the realm of eco-trends, green innovation blooms, uniting
@@ -43,12 +51,15 @@ function InfoSlide() {
           </Row>
         </Col>
         <Col xs={12} md={4}>
-          <Row className="flex-column g-3 ">
+          <Row className="flex-column g-3 text-center">
             <Col className="d-flex justify-content-center align-items-center">
-              icon
+              {/* <GiWisdom /> */}
+              <MdEmojiNature style={{ fontSize: "40px", color: "#40916c" }} />
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
-              <h6>Nature-Inspired Wisdom</h6>
+              <h6 style={{ fontSize: "16px", fontWeight: "bold" }}>
+                Nature-Inspired Wisdom
+              </h6>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
               Eco-trends echo nature's wisdom: tread lightly, cherish

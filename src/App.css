@@ -73,7 +73,7 @@
   border: 2px solid white;
   border-radius: 15px; /* Adjust the border-radius as needed */
   padding: 30px; /* Add padding as needed */
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 /* Product Card  */
 .card-width{
@@ -109,5 +109,8 @@
   color: #04040454;
 }
 .text3{
-  color: #fefae0b3
+  color: #ccd5ae
+}
+.custom-spacing {
+  margin-bottom: 20px !important;
 }

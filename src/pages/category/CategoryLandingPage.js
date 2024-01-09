@@ -9,9 +9,9 @@ function CategoryLandingPage() {
   return (
     <div>
       <Header />
-      <div className="main" style={{ marginLeft: "40px", marginRight: "40px" }}>
+      <div className="main mt-5" style={{ marginLeft: "40px", marginRight: "40px" }}>
         <CategoryHero />
-        <CategoryNav />
+        {/* <CategoryNav /> */}
         <CategoryBody/>
       </div>
       <Footer />

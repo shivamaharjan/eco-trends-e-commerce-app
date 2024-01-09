@@ -53,33 +53,33 @@ function CategoryHero() {
             </Col>
 
             <Col md={7} className="g-5">
-              <Row>
+              <Row className="">
                 <Col md={4} className="discount-card">
-                  <StyledDINBoldText className="text-white text-center">
+                  <div className="text-white text-center">
                     <h1>30%</h1>
                     <h1>OFF</h1>
-                  </StyledDINBoldText>
-                  <StyledText className="text-white">
+                  </div>
+                  <div className="text-white text-center">
                     Orders 180$ or more
-                  </StyledText>
+                  </div>
                 </Col>
-                <Col md={4} className="discount-card">
-                  <StyledDINBoldText className="text-white ">
+                <Col md={4} className="discount-card custom-spacing">
+                  <div className="text-white ">
                     <h1>20%</h1>
                     <h1>OFF</h1>
-                  </StyledDINBoldText>
-                  <StyledText className="text-white">
+                  </div>
+                  <div className="text-white text-center">
                     Orders 120$ or more
-                  </StyledText>
+                  </div>
                 </Col>
-                <Col md={4} className="discount-card">
-                  <StyledDINBoldText className="text-white">
+                <Col md={4} className="discount-card custom-spacing">
+                  <div className="text-white text-center">
                     <h1>10%</h1>
                     <h1>OFF</h1>
-                  </StyledDINBoldText>
-                  <StyledText className="text-white">
+                  </div>
+                  <div className="text-white text-center">
                     Orders 60$ or more
-                  </StyledText>
+                  </div>
                 </Col>
               </Row>
             </Col>

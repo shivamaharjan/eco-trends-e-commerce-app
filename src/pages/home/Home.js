@@ -7,6 +7,7 @@ import ShopCategories from "../../components/home/ShopCategories";
 import InfoSlide from "../../components/home/InfoSlide";
 import FeaturedItems from "../../components/home/FeaturedItems";
 import OurMission from "../../components/home/OurMission";
+import AboutUs from "../../components/home/AboutUs";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <InfoSlide/>
         <FeaturedItems/>
         <OurMission/>
+        <AboutUs/>
       </div>
       <Footer />
     </div>

@@ -28,6 +28,10 @@ function EditProfile() {
       await dispatch(createUserAction(formData, navigate));
     };
 
+    const handleOnClick = () => {
+      navigate("/profile")
+    }
+
   const inputs = [
     {
       label: "First Name *",
@@ -111,7 +115,17 @@ function EditProfile() {
     <div>
       <Header />
       <div className="main pt-5 ps-5 pe-5">
-        <Form onSubmit={handleOnSubmit}>
+        <Button
+          onClick={handleOnClick}
+          style={{
+            width: "100px",
+            backgroundColor: "#d4a373",
+            color: "white",
+          }}
+        >
+          Go Back
+        </Button>
+        <Form className="mt-5" onSubmit={handleOnSubmit}>
           {inputs.map((input) => {
             return (
               <CustomInput

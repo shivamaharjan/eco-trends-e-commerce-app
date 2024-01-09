@@ -29,7 +29,7 @@ function Header() {
         <StyledText>
           " Gift the Planet: Unwrap Eco-Friendly Joy with Our Sustainable
           Holiday Sale! Get Upto 30% off. &nbsp;&nbsp;
-          <Link to="/" className="link-color">
+          <Link to="/category-home" className="link-color">
             Learn more
           </Link>
           &nbsp;"

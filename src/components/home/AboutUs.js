@@ -1,9 +1,9 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
-import ProductCard from '../product/ProductCard';
+import { Card, Col, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import ProductCard from '../product/ProductCard';
 
-function FeaturedItems() {
+function AboutUs() {
   const { productList } = useSelector((state) => state.productInfo);
   const getRandomNumber = () => Math.random() - 0.5;
   const shuffledProductList = [...productList].sort(getRandomNumber);
@@ -17,7 +17,7 @@ function FeaturedItems() {
         fontFamily: "Futura, sans-serif",
       }}
     >
-      <h1>Now Trending</h1>
+      <h1>Featured Items</h1>
       <div>
         <Row className="justify-content-center mt-5">
           {limitedProductList.map((product) => (
@@ -37,4 +37,4 @@ function FeaturedItems() {
   );
 }
 
-export default FeaturedItems
+export default AboutUs;

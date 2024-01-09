@@ -6,6 +6,7 @@ import CustomInput from "../../components/customInput/CustomInput";
 import Footer from "../../components/layout/Footer";
 import Header from "../../components/layout/Header";
 import { forgetPasswordAction } from "../../redux/auth/userAction";
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 const inputs = [
   {

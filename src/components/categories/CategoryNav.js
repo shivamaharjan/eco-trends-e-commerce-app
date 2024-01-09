@@ -7,7 +7,7 @@ function CategoryNav() {
   return (
     <div>
       <Container>
-        <Row className="p-5 g-lg-5 g-md-5 g-sm-3">
+        <Row className="p-5 g-lg-5 g-md-5 g-sm-3 mt-5 mb-5">
           <Col>
             <Image
               src={img1}

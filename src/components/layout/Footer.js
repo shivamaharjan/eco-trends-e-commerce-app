@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="headercss">
-      <Container>
+    <footer
+      className="mt-5 text-color"
+      style={{ backgroundColor: "#faedcd" }}
+    >
+      <Container className="pt-5">
         <Row>
           <Col md={4} className="mt-3">
             <h5>Contact Us</h5>
